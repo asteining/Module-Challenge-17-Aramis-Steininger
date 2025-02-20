@@ -1,7 +1,6 @@
-// models/Thought.js
-const { Schema, model, Types } = require('mongoose');
+import { Schema, model, Types } from 'mongoose';
 // Optionally, use a date library (like moment) to format timestamps:
-const moment = require('moment');
+import moment from 'moment';
 
 const reactionSchema = new Schema(
   {
@@ -25,9 +24,7 @@ const reactionSchema = new Schema(
     },
   },
   {
-    toJSON: {
-      getters: true,
-    },
+    toJSON: { getters: true,},
     id: false,
   }
 );
@@ -66,4 +63,4 @@ thoughtSchema.virtual('reactionCount').get(function () {
 
 const Thought = model('Thought', thoughtSchema);
 
-module.exports = Thought;
+export default Thought;
