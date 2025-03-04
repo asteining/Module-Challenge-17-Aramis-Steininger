@@ -75,7 +75,9 @@ Create a new thought. (Ensure to include userId in the request body so the thoug
 - DELETE /api/thoughts/:thoughtId/reactions/:reactionId
 - Remove a reaction from a thought.
 
-## Walkthrough Video
+## Walkthrough Videos
+- https://app.screencastify.com/v3/watch/xNB5aEZHvPTP7w0LqTOI
+- https://app.screencastify.com/v3/watch/IxLIouJDWeDIp4ZEME6t
 
 
 

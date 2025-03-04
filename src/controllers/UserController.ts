@@ -25,6 +25,9 @@ export const getUserById = async (req: Request, res: Response): Promise<Response
 };
 
 export const createUser = async (req: Request, res: Response): Promise<Response> => {
+  // log the request body
+  console.log('createUser req.body:' , req.body);
+
   try {
     const user = await User.create(req.body);
     return res.status(201).json(user);
